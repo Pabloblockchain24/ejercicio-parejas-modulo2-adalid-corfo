@@ -2,7 +2,7 @@
 
 ## Descripción del Proyecto
 
-Este proyecto es una práctica para el Módulo 2 del curso Adalid Corfo. Se trata de un sitio web simple que presenta un hospital médico con tres secciones principales: Home, Equipo Médico y Contacto. El objetivo es implementar un sitio web modular utilizando HTML, SCSS, y CSS, se han aplicado media queries y modularización de estilos mediante el uso de SASS para una estructura más clara y mantenible, además se usa el framework css para optimizar el desarrollo del proyecto, incorporando componentes como buttons, forms, grids y cards.
+Este proyecto es una práctica para el Módulo 2 del curso Adalid Corfo. Se trata de un sitio web simple que presenta un hospital médico con tres secciones principales: Home, Equipo Médico y Contacto. El objetivo es implementar un sitio web modular utilizando HTML, SCSS, y CSS, se han aplicado media queries y modularización de estilos mediante el uso de SASS para una estructura más clara y mantenible, además se usa el framework de css Bootstrap para optimizar el desarrollo del proyecto, incorporando componentes como buttons, forms, grids y cards.
 
 ## Instrucciones para Visualizar el Proyecto
 
