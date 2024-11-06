@@ -97,6 +97,7 @@ header {
   width: 100%;
   top: 0;
   z-index: 99;
+  height: 7rem;
   box-shadow: 0px 2px 12px rgb(80, 80, 80);
 }
 header img {
@@ -114,6 +115,7 @@ header a:hover {
 @media (max-width: 1200px) {
   header {
     padding-inline: 8rem;
+    height: auto;
   }
 }
 @media (max-width: 1024px) {
@@ -282,29 +284,47 @@ body > footer h2 {
   }
 }
 
-main {
-  padding-block: 2rem;
-  padding-inline: 10rem;
-  background-color: #f6f8f8;
+/*Le doy a las secciones hijas de main un padding de 12rem para que no queden pegadas al borde*/
+main > section {
+  padding-inline: 12rem;
+  padding-block: 3rem;
 }
 @media (max-width: 1200px) {
-  main {
+  main > section {
     padding-inline: 8rem;
   }
 }
-@media (max-width: 1024px) {
-  main {
-    padding-inline: 5rem;
-  }
-}
-@media (max-width: 420px) {
-  main {
-    padding-inline: 1.25rem;
+@media (max-width: 768px) {
+  main > section {
+    padding-inline: 1.5rem;
   }
 }
 
-main > section {
-  padding-block: 3rem;
+.banner-container {
+  background-image: url("./assets/img/banner_image.jpg");
+  background-color: rgba(39, 132, 209, 0.3);
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: calc(100vh - 7rem);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.banner-container > h1 {
+  font-size: 4rem !important;
+  color: white;
+}
+@media (max-width: 1200px) {
+  .banner-container > h1 {
+    font-size: 2.5rem !important;
+  }
+}
+@media (max-width: 576px) {
+  .banner-container > h1 {
+    font-size: 1.5rem !important;
+  }
 }
 
 .servicios__container {
@@ -313,15 +333,14 @@ main > section {
 
 .servicios {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 5px;
 }
 
 .servicios > div {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex: 1 !important;
 }
 

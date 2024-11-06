@@ -14,6 +14,7 @@ header {
   width: 100%;
   top: 0;
   z-index: 99;
+  height: 7rem;
   @include mixins.box-shadow;
   img {
     width: 80px;
@@ -30,6 +31,8 @@ header {
   }
   @media (max-width: breakpoints.$breakpoint-xl) {
     padding-inline: 8rem;
+    height: auto;
+
   }
   @media (max-width: breakpoints.$breakpoint-lg) {
     padding-inline: 5rem;

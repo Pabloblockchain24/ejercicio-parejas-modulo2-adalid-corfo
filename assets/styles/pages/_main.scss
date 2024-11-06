@@ -1,41 +1,55 @@
 @use "../themes/theme-adalid" as colors;
 @use "../abstracts/variables" as breakpoints;
 
-main {
-  padding-block: 2rem;
-  padding-inline: 10rem;
-  background-color: colors.$secondary-color;
+/*Le doy a las secciones hijas de main un padding de 12rem para que no queden pegadas al borde*/
+main > section {
+  padding-inline: 12rem;
+  padding-block: 3rem ;  
 
   @media (max-width: breakpoints.$breakpoint-xl) {
     padding-inline: 8rem;
   }
-  @media (max-width: breakpoints.$breakpoint-lg) {
-    padding-inline: 5rem;
-  }
-  @media (max-width: breakpoints.$breakpoint-xs) {
-    padding-inline: 1.25rem;
+  @media (max-width: breakpoints.$breakpoint-md) {
+    padding-inline:1.5rem;
   }
 }
 
-main > section{
-  padding-block: 3rem ;  
+.banner-container{
+  background-image: url("./assets/img/banner_image.jpg");
+  background-color: rgba($color: #2784d1, $alpha: 0.3);
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: calc(100vh - 7rem);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
 
- 
+.banner-container > h1{
+  font-size: 4rem !important;
+  color: white;
+  @media (max-width: breakpoints.$breakpoint-xl) {
+    font-size: 2.5rem !important;
+  }
+  @media (max-width: breakpoints.$breakpoint-sm) {
+    font-size: 1.5rem !important;
+  }
+}
+
 .servicios__container{
   max-width: 100% !important;	
 }
 .servicios{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 5px;
 }
 
 .servicios > div{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex: 1 !important;
 }
 
